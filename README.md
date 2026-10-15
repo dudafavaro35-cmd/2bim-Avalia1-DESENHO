@@ -24,4 +24,4 @@ Framework preset: `None`. Build command: vazio. Build output directory: `public`
 
 Nome: Eduarda Favaro Barbosa
 RA: 2026108887
-URL: https://
+URL: https://https://2bim-avalia1-desenho.pages.dev/
