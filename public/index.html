@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Desenho Assinado</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <main>
+    <h1>Desenho Assinado com Google OAuth</h1>
+
+    <div id="g_id_onload"
+         data-client_id="O_TEU_CLIENT_ID_AQUI.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+
+    <div id="login-status" style="margin: 10px 0; color: green;"></div>
+
+    <form id="drawing-form">
+      <label for="numero">Número (1 a 100):</label>
+      <input type="number" id="numero" min="1" max="100" required>
+      <button type="submit">Gerar Desenho</button>
+    </form>
+
+    <div id="error-message" style="color: red; margin-top: 10px;"></div>
+    <div id="svg-container"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
